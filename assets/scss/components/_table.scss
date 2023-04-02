@@ -164,7 +164,7 @@
 
 @for $i from 2 through 10 {
     tr:nth-child(#{$i}) .rango .rango__content-range::before{
-        left: random(100%)+px;
+        left: $i * 10 * 1px;
     }
 }
 
