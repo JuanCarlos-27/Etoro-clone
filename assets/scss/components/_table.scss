@@ -1,0 +1,183 @@
+@use "../colors";
+@use "../fonts";
+
+@mixin arrow($color, $degree, $top, $left){
+    position: absolute;
+    top: $top;
+    left: $left;
+    border-width: 0 10px 10px 0;
+    border-style: solid;
+    border-color: transparent $color transparent transparent;
+    transform: rotate($degree);
+}
+
+.section-container__datatable{
+    margin-bottom: 6rem;
+    table{
+        font-family: fonts.$dinot-font;
+        width: 100%;
+        thead{
+            tr{
+                opacity: .6;
+                th{
+                    padding: 1.5rem 0px;
+                }
+                th:nth-child(1){
+                    text-align: left;
+                }
+                th:nth-child(2){
+                    text-align: right;
+                    position: relative;
+                    &::after{
+                        content: " 1D";
+                        color: colors.$blue-color;
+                    }
+                }
+            }
+        }
+        tbody{
+            tr{
+                outline: 1px solid #eeee;
+                td{
+                    padding: 10px;
+                }
+                .instrumentos{
+                    &__content{
+                        display: grid;
+                        grid-template-columns: 40px 200px 60px;
+                        grid-template-rows: repeat(2, 20px);
+                        max-width: 120px;
+                        column-gap: 10px;
+                        &-brand{
+                            width: 100%;
+                            grid-column: 1/2;
+                        }
+                        &-name{
+                            grid-column: 2/3;
+                            color: #000;
+                        }
+                        &-desc{
+                            grid-column: 2/3;
+                            color: colors.$secondary-color;
+                        }
+                        &-chart{
+                            grid-column: 3/4;
+                            grid-row: 1/3;
+                            justify-self: flex-end;
+                            align-self: center;
+                        }
+                    }
+                }
+                .rendimiento{
+                    &__content{
+                        text-align: right;
+                        &-value{
+                            color: colors.$positive-color;
+                            font-weight: 700;
+                            font-size: 19px;
+                        }
+    
+                        &-percent{
+                            position: relative;
+                        }
+                        &-percent::before{
+                            content: "";
+                            @include arrow(colors.$positive-color, -45deg, 8px, 70%);
+                        }
+                    }
+                }
+                .vender, .comprar{
+                    p{
+                        position: relative;
+                        padding: 10px;
+                        text-align: right;
+                        border-radius: 5px;
+                        background-color: colors.$background-search-bar;
+                        font-weight: 700;
+                    }
+                    p::before{
+                        content: "V";
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 700;
+                        color: colors.$background-color;
+                        top: 0;
+                        left: 0;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        width: 40px;
+                        height: 100%;
+                        background-color: colors.$secondary-color;
+                        position: absolute;
+                    }
+                }
+                .comprar{
+                    p::before{
+                        content: "C";
+                    }
+                }
+                .rango{
+                    &__content{
+                        display: grid;
+                        gap:10px;
+                        grid-template-areas: 
+                        "p1 p2 dots"
+                        "range range dots";
+                        &-val1{
+                            grid-area: p1;
+                            font-weight: 700;
+                            justify-self: flex-start;
+                        }
+                        &-val2{
+                            grid-area: p2;
+                            font-weight: 700;
+                            justify-self: flex-end;
+                        }
+                        &-range{
+                            grid-area: range;
+                            width: 100%;
+                            height: 9px;
+                            border-radius: 20px;
+                            background-color: colors.$background-search-bar;
+                            position: relative;
+
+                            &::before{  
+                                content: "";
+                                @include arrow(colors.$primary-color, 135deg, -8px, 50%);
+                            }
+                        }
+                        &-more{
+                            grid-area: dots;
+                            justify-self: center;
+                            align-self: flex-end;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@for $i from 2 through 10 {
+    tr:nth-child(#{$i}) .rango .rango__content-range::before{
+        left: random(100%)+px;
+    }
+}
+
+tr:nth-child(8) .rendimiento{
+    &__content{
+        p{
+            color: colors.$negative-color !important;
+        }
+        p:first-child::before{
+            content: "-";
+        }
+        p:last-child::before{
+            content: "";
+            @include arrow(colors.$negative-color, 135deg, 3px, 67%);
+        }
+    }
+
+} 

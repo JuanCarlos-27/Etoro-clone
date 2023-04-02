@@ -1,0 +1,21 @@
+@use "../colors";
+
+.section-container__footer{
+    $altura: 80px;
+    position: fixed;
+    top: calc(100% - 80px);
+    left: 60px;
+    height: $altura;
+    width: 100vw;
+    background-color: colors.$background-color;
+    box-shadow: 0px -2px 9px #00000020;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    text-align: center;
+
+    article{
+        border: 1px solid red;
+    }
+}

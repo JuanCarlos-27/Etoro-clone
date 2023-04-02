@@ -1,0 +1,41 @@
+@use "../colors";
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 17px;
+    align-items: center;
+    border-bottom: 1px solid #eeee;
+    input{
+        padding: 9px;
+        width: 300px;
+        border: none;
+        outline: none;
+        background-color: colors.$background-search-bar;
+        color: colors.$color-search-bar;
+        font-size: 16px;
+        border-radius: 6px;
+        transition: width .35s ease 0s;
+        padding-left: 40px;
+        &:focus{
+            width: 350px;
+        }
+        &::placeholder{
+            opacity: 0.5;
+            font-size: 15px;
+        }
+    }
+    span{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            z-index: 10;
+            width: 20px;
+            height: 20px;
+            background-image: url("../../assets/icons/search-icon.svg");
+        }
+    }
+}

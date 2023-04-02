@@ -1,0 +1,57 @@
+@use "../colors";
+
+@mixin centerContent(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-block: 20px;
+    position: fixed;
+    height: 100vh;
+    width: 60px;
+    background-image: colors.$navbar-background;
+
+    &__first-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 60%;
+    }
+
+    &__expand-icon{
+        @include centerContent();
+        img{
+            transform: rotate(180deg);
+        }
+    }
+    &__picture-profile {
+        @include centerContent();
+        img{
+            width: 50%;
+        }
+    }
+    &__options{
+        list-style: none;
+        &-item{
+            @include centerContent();
+            margin-bottom: 35px;
+            margin-top: 30px;
+            &:nth-child(1){
+                filter: hue-rotate(100deg);
+            }
+        }
+    }
+
+    &__settings{
+        @include centerContent();
+        grid-row: 6/7;
+    }
+
+
+}
+

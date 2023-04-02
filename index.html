@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etoro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="main-container">
+    <!-- Aside bar -->
+        <aside class="navbar">
+            <section class="navbar__first-section">
+                <div class="navbar__expand-icon">
+                    <img src="assets/icons/nav-arrow-rotate.svg" alt="Expand menu icon">
+                </div>
+                
+                <div class="navbar__picture-profile">
+                    <img src="assets/icons/avatar.png" alt="Picture profile">
+                </div>
+                
+                <ul class="navbar__options">
+                    <li class="navbar__options-item"><img src="/assets/icons/home-icon.svg" alt=""></li>
+                    <li class="navbar__options-item"><img src="/assets/icons/watchlist.svg" alt=""></li>
+                    <li class="navbar__options-item"><img src="/assets/icons/chart-icon.svg" alt=""></li>
+                    <li class="navbar__options-item"><img src="/assets/icons/compass-icon.svg" alt=""></li>
+                </ul>
+            </section>
+
+            <div class="navbar__settings">
+                <img src="./assets/icons/settings-icon.svg" alt="">
+            </div>
+        </aside>
+        
+        <header class="header">
+            <div></div>
+            <span>
+                <input type="search" placeholder="Buscar" />
+            </span>
+            <img src="./assets/icons/notification-icon.svg" alt="Notification">
+        </header>
+
+        <section class="section-container">
+            <header class="section-container__header">
+                <div class="section-container__header-first">
+                    <h2>Lista de seguimiento</h2>
+                    <ul>
+                        <li><img src="./assets/icons/plus-icon.svg" alt="More"></li>
+                        <li><img src="./assets/icons/options-icon.svg" alt="Options"></li>
+                        <li><img src="./assets/icons/settings-icon-gray.svg" alt="Settings"></li>
+                        <li><img src="./assets/icons/grid-icon.svg" alt="Grid"></li>
+                    </ul>
+                </div>
+                <ul class="section-container__header-second">
+                    <li><a href="#">Todo</a></li>
+                    <li><a href="#">Mi portafolio</a></li>
+                    <li><a href="#">ETFs</a></li>
+                    <li><a href="#">Acciones</a></li>
+                    <li><a href="#">Criptomonedas</a></li>
+                    <li><a href="#">índices</a></li>
+                    <li><a href="#">Materias primas</a></li>
+                    <li><a href="#">Personas</a></li>
+                    <li><a href="#">Smart Portafolios</a></li>
+                </ul>
+            </header>
+
+            <article class="section-container__datatable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Instrumentos</th>
+                            <th>Rendimiento</th>
+                            <th>Vender</th>
+                            <th>Comprar</th>
+                            <th>Rango de 52 W</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="instrumentos">
+                                <article class="instrumentos__content">
+                                    <img class="instrumentos__content-brand" src="./assets/img/VOO.png" alt="VOO">
+                                    <h5 class="instrumentos__content-name">VOO</h5>
+                                    <p class="instrumentos__content-desc">Vanguard S&P 500 ETF</p>
+                                    <img class="instrumentos__content-chart" src="./assets//icons/chart-icon-gray.svg" alt="chart">
+                                </article>
+                            </td>
+                            <td class="rendimiento">
+                                <article class="rendimiento__content">
+                                    <p class="rendimiento__content-value">2.20</p>
+                                    <p class="rendimiento__content-percent">(0.60%)</p>
+                                </article>
+                            </td>
+                            <td class="vender">
+                               <p>370.22</p>
+                            </td>
+                            <td class="comprar">
+                               <p>371.38</p>
+                            </td>
+                            <td class="rango">
+                                <article class="rango__content">
+                                    <p class="rango__content-val1">319.32</p>
+                                    <p class="rango__content-val2">421.28</p>
+                                    <p class="rango__content-range"></p>
+                                    <img class="rango__content-more" src="./assets/icons/icon-three-dots.svg" alt="More options">
+                                </article>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="instrumentos">
+                                <article class="instrumentos__content">
+                                    <img class="instrumentos__content-brand" src="./assets/img/SPYD.png" alt="SPYD">
+                                    <h5 class="instrumentos__content-name">VOO</h5>
+                                    <p class="instrumentos__content-desc">Vanguard S&P 500 ETF</p>
+                                    <img class="instrumentos__content-chart" src="./assets//icons/chart-icon-gray.svg" alt="chart">
+                                </article>
+                            </td>
+                            <td class="rendimiento">
+                                <article class="rendimiento__content">
+                                    <p class="rendimiento__content-value">2.20</p>
+                                    <p class="rendimiento__content-percent">(0.60%)</p>
+                                </article>
+                            </td>
+                            <td class="vender">
+                               <p>370.22</p>
+                            </td>
+                            <td class="comprar">
+                               <p>371.38</p>
+                            </td>
+                            <td class="rango">
+                                <article class="rango__content">
+                                    <p class="rango__content-val1">319.32</p>
+                                    <p class="rango__content-val2">421.28</p>
+                                    <p class="rango__content-range"></p>
+                                    <img class="rango__content-more" src="./assets/icons/icon-three-dots.svg" alt="More options">
+                                </article>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="instrumentos">
+                                <article class="instrumentos__content">
+                                    <img class="instrumentos__content-brand" src="./assets/img/TSLA.png" alt="TSLA">
+                                    <h5 class="instrumentos__content-name">VOO</h5>
+                                    <p class="instrumentos__content-desc">Vanguard S&P 500 ETF</p>
+                                    <img class="instrumentos__content-chart" src="./assets//icons/chart-icon-gray.svg" alt="chart">
+                                </article>
+                            </td>
+                            <td class="rendimiento">
+                                <article class="rendimiento__content">
+                                    <p class="rendimiento__content-value">2.20</p>
+                                    <p class="rendimiento__content-percent">(0.60%)</p>
+                                </article>
+                            </td>
+                            <td class="vender">
+                               <p>370.22</p>
+                            </td>
+                            <td class="comprar">
+                               <p>371.38</p>
+                            </td>
+                            <td class="rango">
+                                <article class="rango__content">
+                                    <p class="rango__content-val1">319.32</p>
+                                    <p class="rango__content-val2">421.28</p>
+                                    <p class="rango__content-range"></p>
+                                    <img class="rango__content-more" src="./assets/icons/icon-three-dots.svg" alt="More options">
+                                </article>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="instrumentos">
+                                <article class="instrumentos__content">
+                                    <img class="instrumentos__content-brand" src="./assets/img/EPAM.png" alt="EPAM">
+                                    <h5 class="instrumentos__content-name">VOO</h5>
+                                    <p class="instrumentos__content-desc">Vanguard S&P 500 ETF</p>
+                                    <img class="instrumentos__content-chart" src="./assets//icons/chart-icon-gray.svg" alt="chart">
+                                </article>
+                            </td>
+                            <td class="rendimiento">
+                                <article class="rendimiento__content">
+                                    <p class="rendimiento__content-value">2.20</p>
+                                    <p class="rendimiento__content-percent">(0.60%)</p>
+                                </article>
+                            </td>
+                            <td class="vender">
+                               <p>370.22</p>
+                            </td>
+                            <td class="comprar">
+                               <p>371.38</p>
+                            </td>
+                            <td class="rango">
+                                <article class="rango__content">
+                                    <p class="rango__content-val1">319.32</p>
+                                    <p class="rango__content-val2">421.28</p>
+                                    <p class="rango__content-range"></p>
+                                    <img class="rango__content-more" src="./assets/icons/icon-three-dots.svg" alt="More options">
+                                </article>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="instrumentos">
+                                <article class="instrumentos__content">
+                                    <img class="instrumentos__content-brand" src="./assets/img/AMZN.png" alt="AMZN">
+                                    <h5 class="instrumentos__content-name">VOO</h5>
+                                    <p class="instrumentos__content-desc">Vanguard S&P 500 ETF</p>
+                                    <img class="instrumentos__content-chart" src="./assets//icons/chart-icon-gray.svg" alt="chart">
+                                </article>
+                            </td>
+                            <td class="rendimiento">
+                                <article class="rendimiento__content">
+                                    <p class="rendimiento__content-value">2.20</p>
+                                    <p class="rendimiento__content-percent">(0.60%)</p>
+                                </article>
+                            </td>
+                            <td class="vender">
+                               <p>370.22</p>
+                            </td>
+                            <td class="comprar">
+                               <p>371.38</p>
+                            </td>
+                            <td class="rango">
+                                <article class="rango__content">
+                                    <p class="rango__content-val1">319.32</p>
+                                    <p class="rango__content-val2">421.28</p>
+                                    <p class="rango__content-range"></p>
+                                    <img class="rango__content-more" src="./assets/icons/icon-three-dots.svg" alt="More options">
+                                </article>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="instrumentos">
+                                <article class="instrumentos__content">
+                                    <img class="instrumentos__content-brand" src="./assets/img/APPL.png" alt="APPL">
+                                    <h5 class="instrumentos__content-name">VOO</h5>
+                                    <p class="instrumentos__content-desc">Vanguard S&P 500 ETF</p>
+                                    <img class="instrumentos__content-chart" src="./assets//icons/chart-icon-gray.svg" alt="chart">
+                                </article>
+                            </td>
+                            <td class="rendimiento">
+                                <article class="rendimiento__content">
+                                    <p class="rendimiento__content-value">2.20</p>
+                                    <p class="rendimiento__content-percent">(0.60%)</p>
+                                </article>
+                            </td>
+                            <td class="vender">
+                               <p>370.22</p>
+                            </td>
+                            <td class="comprar">
+                               <p>371.38</p>
+                            </td>
+                            <td class="rango">
+                                <article class="rango__content">
+                                    <p class="rango__content-val1">319.32</p>
+                                    <p class="rango__content-val2">421.28</p>
+                                    <p class="rango__content-range"></p>
+                                    <img class="rango__content-more" src="./assets/icons/icon-three-dots.svg" alt="More options">
+                                </article>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="instrumentos">
+                                <article class="instrumentos__content">
+                                    <img class="instrumentos__content-brand" src="./assets/img/BTC.png" alt="BTC">
+                                    <h5 class="instrumentos__content-name">VOO</h5>
+                                    <p class="instrumentos__content-desc">Vanguard S&P 500 ETF</p>
+                                    <img class="instrumentos__content-chart" src="./assets//icons/chart-icon-gray.svg" alt="chart">
+                                </article>
+                            </td>
+                            <td class="rendimiento">
+                                <article class="rendimiento__content">
+                                    <p class="rendimiento__content-value">2.20</p>
+                                    <p class="rendimiento__content-percent">(0.60%)</p>
+                                </article>
+                            </td>
+                            <td class="vender">
+                               <p>370.22</p>
+                            </td>
+                            <td class="comprar">
+                               <p>371.38</p>
+                            </td>
+                            <td class="rango">
+                                <article class="rango__content">
+                                    <p class="rango__content-val1">319.32</p>
+                                    <p class="rango__content-val2">421.28</p>
+                                    <p class="rango__content-range"></p>
+                                    <img class="rango__content-more" src="./assets/icons/icon-three-dots.svg" alt="More options">
+                                </article>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="instrumentos">
+                                <article class="instrumentos__content">
+                                    <img class="instrumentos__content-brand" src="./assets/img/XRP.png" alt="XRP">
+                                    <h5 class="instrumentos__content-name">VOO</h5>
+                                    <p class="instrumentos__content-desc">Vanguard S&P 500 ETF</p>
+                                    <img class="instrumentos__content-chart" src="./assets//icons/chart-icon-gray.svg" alt="chart">
+                                </article>
+                            </td>
+                            <td class="rendimiento">
+                                <article class="rendimiento__content">
+                                    <p class="rendimiento__content-value">0.00099</p>
+                                    <p class="rendimiento__content-percent">(-0.19%)</p>
+                                </article>
+                            </td>
+                            <td class="vender">
+                               <p>370.22</p>
+                            </td>
+                            <td class="comprar">
+                               <p>371.38</p>
+                            </td>
+                            <td class="rango">
+                                <article class="rango__content">
+                                    <p class="rango__content-val1">319.32</p>
+                                    <p class="rango__content-val2">421.28</p>
+                                    <p class="rango__content-range"></p>
+                                    <img class="rango__content-more" src="./assets/icons/icon-three-dots.svg" alt="More options">
+                                </article>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="instrumentos">
+                                <article class="instrumentos__content">
+                                    <img class="instrumentos__content-brand" src="./assets/img/SPX500.png" alt="SPX500">
+                                    <h5 class="instrumentos__content-name">VOO</h5>
+                                    <p class="instrumentos__content-desc">Vanguard S&P 500 ETF</p>
+                                    <img class="instrumentos__content-chart" src="./assets//icons/chart-icon-gray.svg" alt="chart">
+                                </article>
+                            </td>
+                            <td class="rendimiento">
+                                <article class="rendimiento__content">
+                                    <p class="rendimiento__content-value">2.20</p>
+                                    <p class="rendimiento__content-percent">(0.60%)</p>
+                                </article>
+                            </td>
+                            <td class="vender">
+                               <p>370.22</p>
+                            </td>
+                            <td class="comprar">
+                               <p>371.38</p>
+                            </td>
+                            <td class="rango">
+                                <article class="rango__content">
+                                    <p class="rango__content-val1">319.32</p>
+                                    <p class="rango__content-val2">421.28</p>
+                                    <p class="rango__content-range"></p>
+                                    <img class="rango__content-more" src="./assets/icons/icon-three-dots.svg" alt="More options">
+                                </article>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="instrumentos">
+                                <article class="instrumentos__content">
+                                    <img class="instrumentos__content-brand" src="./assets/img/NSDQ100.png" alt="NSDQ100">
+                                    <h5 class="instrumentos__content-name">VOO</h5>
+                                    <p class="instrumentos__content-desc">Vanguard S&P 500 ETF</p>
+                                    <img class="instrumentos__content-chart" src="./assets//icons/chart-icon-gray.svg" alt="chart">
+                                </article>
+                            </td>
+                            <td class="rendimiento">
+                                <article class="rendimiento__content">
+                                    <p class="rendimiento__content-value">2.20</p>
+                                    <p class="rendimiento__content-percent">(0.60%)</p>
+                                </article>
+                            </td>
+                            <td class="vender">
+                               <p>370.22</p>
+                            </td>
+                            <td class="comprar">
+                               <p>371.38</p>
+                            </td>
+                            <td class="rango">
+                                <article class="rango__content">
+                                    <p class="rango__content-val1">319.32</p>
+                                    <p class="rango__content-val2">421.28</p>
+                                    <p class="rango__content-range"></p>
+                                    <img class="rango__content-more" src="./assets/icons/icon-three-dots.svg" alt="More options">
+                                </article>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <footer class="section-container__footer">
+                <article>
+                    <h3>$74,980.00</h3>
+                    <p>Efectivo Disponible</p>
+                </article>
+                <article>
+                    <h3>$25,020.00</h3>
+                    <p>Total Invertido</p>
+                </article>
+                <article>
+                    <h3>$1,002.54</h3>
+                    <p>Ganancia/Pérdida</p>
+                </article>
+                <article>
+                    <h3>$101,002.54</h3>
+                    <p>Capital Virtual</p>
+
+                </article>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>

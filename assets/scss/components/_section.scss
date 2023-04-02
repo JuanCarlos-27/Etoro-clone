@@ -1,0 +1,67 @@
+@use "../colors";
+
+.section-container{
+    display: grid;
+    padding: 20px;
+    position: relative;
+    &__header{
+        &-first{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            h2::after{
+                content: "";
+                width: 20px;
+                height: 20px;
+                z-index: 10;
+                background-image: url("../../assets/icons/down-chevron.svg");
+                position: absolute;
+                top: 5px;
+                margin-left: 10px;
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                list-style: none;
+                li:first-child{
+                    margin-right: 16px;
+                }
+            }
+        }
+
+        &-second{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+            
+            li{
+                margin: 10px 0px;
+
+                &:nth-child(1) a{
+                    color: #fff;
+                    background-color: colors.$primary-color;
+                }
+
+                a{
+                    text-decoration: none;
+                    padding: 10px 16px;
+                    color: colors.$secondary-color;
+                    border-radius: 50px;
+                    border: 1px solid mix(#fff, colors.$secondary-color, 70%);
+                    font-weight: 500;
+                    transition: .5s background-color ease;
+
+                    &:hover{
+                        color: #fff;
+                        background-color: colors.$primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
