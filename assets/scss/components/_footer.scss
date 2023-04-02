@@ -8,14 +8,66 @@
     height: $altura;
     width: 100vw;
     background-color: colors.$background-color;
-    box-shadow: 0px -2px 9px #00000020;
+    box-shadow: 0px -1px 9px #00000020;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     text-align: center;
 
+    
     article{
-        border: 1px solid red;
+        $symbols-color:#0000006c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: .2px solid #00000020;
+        h3{
+            font-weight: 400;
+        }
+        p{
+            color: $symbols-color;
+        }
+        
+        &:nth-child(2){
+            position: relative;
+            &::before{
+                content: "+";
+                font-size: 2.5rem;
+                position: absolute;
+                left: -12px;
+                background-color:#fff;
+                color: $symbols-color;
+            }
+        }
+
+        &:nth-child(3){
+            position: relative;
+            h3{
+                color: colors.$positive-color;
+            }
+            &::before{
+                content: "+";
+                font-size: 2.5rem;
+                position: absolute;
+                left: -12px;
+                background-color:#fff;
+                color: $symbols-color;
+            }
+        }
+        &:last-child{
+            position: relative;
+            h3{
+                color: colors.$blue-color;
+            }
+            &::before{
+                content: "=";
+                font-size: 2.5rem;
+                position: absolute;
+                left: -12px;
+                background-color:#fff;
+                color: $symbols-color;
+            }
+        }   
     }
 }

@@ -1,22 +1,7 @@
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="34"
-  height="30"
-  viewBox="0 0 40 30"
->
-  <symbol id="a">
-    <image
-      width="100%"
-      height="100%"
-      href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIGlkPSJfeDMyXyIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNmZmYiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDUxMiA1MTIiPjxnIGlkPSJTVkdSZXBvX2ljb25DYXJyaWVyIj48c3R5bGU+LnN0MHtmaWxsOiNmZGZmZmR9PC9zdHlsZT48cGF0aCBkPSJNNTA3LjQ3OCAyNDAuNDU3QzQ1My4wMDkgMTQ1LjMxIDM2MC43MDQgODIuNzIgMjU1Ljk5OSA4Mi43MmMtMTA0LjcwNiAwLTE5Ny4wMDggNjIuNTktMjUxLjQ3NyAxNTcuNzM3LTEuNDUzIDIuNTQ3LTQuMzU4IDguNzk1LTQuNTE0IDE1LjAxMi0uMTcyIDYuMjMyIDIuNDM2IDEyLjQxOCAzLjc2NCAxNC43NjJDNTguMTQ3IDM2Ni4xMTIgMTUwLjgwOSA0MjkuMjggMjU1Ljk5OSA0MjkuMjhzMTk3Ljg1NC02My4xNjggMjUyLjIyOS0xNTkuMDQ5YzEuMzI4LTIuMzQ0IDMuOTM2LTguNTI5IDMuNzY0LTE0Ljc2Mi0uMTU2LTYuMjE3LTMuMDYxLTEyLjQ2NS00LjUxNC0xNS4wMTJ6TTI1NS45OTkgMzczLjI5NWMtNjQuMDQ1IDAtMTE1Ljk2Ny01MS45MjItMTE1Ljk2Ny0xMTUuOTY3czUxLjkyMi0xMTUuOTY5IDExNS45NjctMTE1Ljk2OSAxMTUuOTY5IDUxLjkyNCAxMTUuOTY5IDExNS45NjktNTEuOTI0IDExNS45NjctMTE1Ljk2OSAxMTUuOTY3eiIgY2xhc3M9InN0MCIvPjxwYXRoIGQ9Ik0yNTUuOTk5IDE4MC4zODFjLTEyLjYzNyAwLTI0LjM5OSAzLjM0Mi0zNC45MTIgOC43NDZsMjguMzM2IDY0LjIxNy02NS4yNjItMjIuOTQ3Yy0zLjE1NiA4LjQwNC01LjEwOSAxNy40MTgtNS4xMDkgMjYuOTMyIDAgNDIuNDczIDM0LjQ3NSA3Ni45NDggNzYuOTQ4IDc2Ljk0OCA0Mi40NzQgMCA3Ni45NDctMzQuNDc1IDc2Ljk0Ny03Ni45NDhzLTM0LjQ3My03Ni45NDgtNzYuOTQ4LTc2Ljk0OHoiIGNsYXNzPSJzdDAiLz48L2c+PC9zdmc+"
-    />
-  </symbol>
-  <path
-    fill="none"
-    stroke="#fdfffd"
-    stroke-linecap="round"
-    stroke-width="3"
-    d="M10.25 15.675c2.3.02 11.49.09 13.79.11m-13.79-.11c2.3.02 11.49.09 13.79.11M10 10c3.55 0 17.74.01 21.29.01M10 10c3.55 0 17.74.01 21.29.01M10.01 21.577c1.14.02 5.7.09 6.83.11m-6.83-.11c1.14.02 5.7.09 6.83.11"
-  />
-  <use width="20" height="20" href="#a" transform="translate(19.95 12.67)" />
-</svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg height="800px" width="800px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#fdfffd;} </style> <g> <path class="st0" d="M507.478,240.457C453.009,145.31,360.704,82.72,255.999,82.72c-104.706,0-197.008,62.59-251.477,157.737 c-1.453,2.547-4.358,8.795-4.514,15.012c-0.172,6.232,2.436,12.418,3.764,14.762C58.147,366.112,150.809,429.28,255.999,429.28 c105.19,0,197.854-63.168,252.229-159.049c1.328-2.344,3.936-8.529,3.764-14.762C511.836,249.252,508.931,243.004,507.478,240.457z M255.999,373.295c-64.045,0-115.967-51.922-115.967-115.967s51.922-115.969,115.967-115.969 c64.045,0,115.969,51.924,115.969,115.969S320.044,373.295,255.999,373.295z"/> <path class="st0" d="M255.999,180.381c-12.637,0-24.399,3.342-34.912,8.746l28.336,64.217l-65.262-22.947 c-3.156,8.404-5.109,17.418-5.109,26.932c0,42.473,34.475,76.948,76.948,76.948c42.474,0,76.947-34.475,76.947-76.948 S298.474,180.381,255.999,180.381z"/> </g> </g>
+</svg>
